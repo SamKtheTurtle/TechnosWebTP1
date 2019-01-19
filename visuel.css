@@ -1,0 +1,96 @@
+/* Style the header */
+header {
+  background-color: #d44e28;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+
+html *
+{
+   font-family: Bahnschrift;
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  font-size: 20px;
+  float: left;
+  width: 30%;
+  height: 852px;
+  background:#242021;
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: square;
+  padding_left: : 30  px;
+}
+
+nav ul ul {
+  list-style-type: disc;
+  padding_left: : 30  px;
+}
+
+article {
+  font-size: 20px;
+  float: right;
+  padding: 20px;
+  /**height: 300px;**/
+  width: 65%;
+  background-color: #2cbcb2;
+}
+
+aside {
+  /**float: right;**/
+  padding: 20px;
+  background-color: white;
+}
+
+/* Clear floats after the columns */
+section:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+footer {
+  font-size: 20px;
+  background-color: #777;
+  padding: 10px;
+  text-align: center;
+  color: white;
+  background: #d44e28
+}
+
+h2 {
+  font-size: 30px;
+  padding : 15px;
+  color: black;
+}
+
+/* Style h2*/
+h3 {
+  text-align: center;
+  color: white;
+}
+
+/* The animation code */
+@keyframes example {
+ 0%   {background-color:red; left:0px; top:0px;}
+ 50%  {background-color:yellow; left:200px; top:0px;}
+ 100% {background-color:red; left:0px; top:0px;}
+}
+
+/* The element to apply the animation to */
+div {
+ width: 100px;
+ height: 50px;
+ position: relative;
+ background-color: red;
+ animation-name: example;
+ animation-duration: 4s;
+ animation-iteration-count:infinite;
+}
