@@ -79,8 +79,34 @@ color: #2cbcb2;
 }
 
 h1 {
-
   animation-name: bounce;
   animation-duration: 2s;
+  animation-iteration-count:infinite;
+}
+
+.dot {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  display: inline-block;
+  background-color: #2cbcb2;
+
+}
+
+/**I made this one on my own**/
+@keyframes menu {
+ 0%   {left:0px; top:0px;}
+ 15%   {left:700px; top:0px;}
+ 35%   {left:450px; top:300px;}
+ 50%  {left:0px; top:100px;}
+ 65% { left:-450px; top:300px;}
+ 85% {left:-700px; top:0px;}
+ 100%  { left:0px; top:0px;}
+}
+
+div {
+  position: relative;
+  animation-name: menu;
+  animation-duration: 4s;
   animation-iteration-count:infinite;
 }
