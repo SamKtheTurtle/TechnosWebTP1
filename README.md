@@ -1,5 +1,9 @@
 # TechnosWebTP1
 
+# CADDEO SAM
+#PROMOTION 2020
+#OCRES 2
+
 ## Instructions
 
 Créer un site CV **présentable** qui pourra être mis en ligne par vos soins
