@@ -87,19 +87,74 @@ footer h2 {
 }
 
 /* The animation code */
-@keyframes example {
+@keyframes slide_box {
  0%   {background-color:#d44e28; left:0px; top:0px;}
  50%  {background-color:#2cbcb2; left:1075px; top:0px;}
  100% {background-color:#d44e28; left:0px; top:0px;}
 }
 
 /* The element to apply the animation to */
-div {
+article div {
  width: 100px;
  height: 50px;
  position: relative;
  background-color: #d44e28;
- animation-name: example;
+ animation-name: slide_box;
  animation-duration: 4s;
  animation-iteration-count:infinite;
+}
+
+/** SOURCE : https://www.w3schools.com/howto/howto_js_popup.asp **/
+
+/* Popup container */
+.popup {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+/* The actual popup (appears on top) */
+.popup .popuptext {
+  visibility: hidden;
+  width: 160px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -80px;
+}
+
+/* Popup arrow */
+.popup .popuptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+/* Toggle this class when clicking on the popup container (hide and show the popup) */
+.popup .show {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity:1 ;}
 }

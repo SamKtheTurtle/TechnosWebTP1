@@ -79,7 +79,7 @@
     <br>
     <aside>
     <p>Expérience en attente... Peut-être vais-je ajouter<strong> votre</strong> entreprise ?</p>
-    <div></div>
+    <a href="index.html"><div></div></a>
     </aside>
     </article>
 
@@ -100,12 +100,26 @@
       <input type="text" name="firstname" placeholder="Nom"><br>
       <input type="text" name="lastname" placeholder="Prénom"><br>
       <input type="text" name="email" placeholder="mail@mail.fr"><br>
-      <textarea type="text" name="commentaire" rows="5" cols="50" placeholder="Votre commentaire"></textarea><br><br><br>
+      <textarea type="text"  name="commentaire" rows="5" cols="50" placeholder="Votre commentaire"></textarea><br><br><br>
       <input type="submit" value="Soumettre">
     </form>
     <br><br>
-    <a href="index.html">La musique te manque ?</a>
+
+    <div class="popup" onclick="myFunction()">
+    La musique te manque ?
+    <span class="popuptext" id="myPopup">Clique sur la boite mouvante...</span>
+  </div>
     </footer>
+
+
+
+    <script>
+// When the user clicks on div, open the popup
+function myFunction() {
+  var popup = document.getElementById("myPopup");
+  popup.classList.toggle("show");
+}
+</script>
 
 </body>
 
