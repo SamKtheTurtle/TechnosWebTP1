@@ -17,19 +17,26 @@ nav {
   font-size: 20px;
   float: left;
   width: 30%;
-  height: 852px;
+  height: 1137px;
   background:#242021;
   padding: 20px;
+  color: white;
+}
+
+nav h2 {
+  font-size: 30px;
+  padding : 15px;
+  color: #2cbcb2;
 }
 
 /* Style the list inside the menu */
 nav ul {
   list-style-type: square;
-  padding_left: : 30  px;
+  padding-left: 30  px;
 }
 
 nav ul ul {
-  list-style-type: disc;
+  list-style-type: circle;
   padding_left: : 30  px;
 }
 
@@ -58,30 +65,32 @@ section:after {
 /* Style the footer */
 footer {
   font-size: 20px;
-  background-color: #777;
   padding: 10px;
   text-align: center;
   color: white;
-  background: #d44e28
+  background: #d44e28;
+}
+
+footer h3 {
+  text-align: center;
+  color: #242021;
 }
 
 h2 {
   font-size: 30px;
   padding : 15px;
-  color: black;
+  color: #242021;
 }
 
-/* Style h2*/
-h3 {
-  text-align: center;
+footer h2 {
   color: white;
 }
 
 /* The animation code */
 @keyframes example {
- 0%   {background-color:red; left:0px; top:0px;}
- 50%  {background-color:yellow; left:200px; top:0px;}
- 100% {background-color:red; left:0px; top:0px;}
+ 0%   {background-color:#d44e28; left:0px; top:0px;}
+ 50%  {background-color:#2cbcb2; left:1075px; top:0px;}
+ 100% {background-color:#d44e28; left:0px; top:0px;}
 }
 
 /* The element to apply the animation to */
@@ -89,7 +98,7 @@ div {
  width: 100px;
  height: 50px;
  position: relative;
- background-color: red;
+ background-color: #d44e28;
  animation-name: example;
  animation-duration: 4s;
  animation-iteration-count:infinite;
